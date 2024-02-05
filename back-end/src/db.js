@@ -1,11 +1,12 @@
 const {Pool} = require('pg');
+const {db} = require('./config.js')
 
 const pool = new Pool({
-    user: 'user_geo_peru',
-    password: 'RVdS4Si8gU64KfqxPsxv5T4ntSo1PMqY',
-    host:'dpg-cn0ge30l5elc73ejjjc0-a.oregon-postgres.render.com',
-    port: 5432,
-    database: 'geo_peru',
+    user: db.user,
+    password: db.password,
+    host: db.host,
+    port: db.port,
+    database: db.database,
     ssl: true
 });
 
