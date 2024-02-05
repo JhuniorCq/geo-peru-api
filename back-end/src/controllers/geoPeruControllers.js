@@ -18,7 +18,7 @@ const getProvince = async (req, res) => {
 
         res.json(listaProvincias);
     } catch(err) {
-        console.error('', err.message);
+        console.error('Error al obtener las provincias', err.message);
     }
 }
 
@@ -29,7 +29,7 @@ const getDistrict = async (req, res) => {
 
         res.json(listaDistritos);
     } catch(err) {
-        console.error('', err.message);
+        console.error('Error al obtener los distritos', err.message);
     }
 }
 
